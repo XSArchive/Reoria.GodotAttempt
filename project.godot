@@ -16,7 +16,8 @@ config/icon="res://icon.svg"
 
 [dotnet]
 
-project/assembly_name="Reoria"
+project/assembly_name="Reoria.Godot"
+project/solution_directory=".godot"
 
 [rendering]
 
