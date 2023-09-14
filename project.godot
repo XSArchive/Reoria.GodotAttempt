@@ -14,14 +14,32 @@ config/name="Reoria"
 config/features=PackedStringArray("4.1", "C#", "Mobile")
 config/icon="res://icon.svg"
 
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/window_width_override=1280
+window/size/window_height_override=720
+window/stretch/mode="canvas_items"
+
 [dotnet]
 
 project/assembly_name="Reoria.Godot"
 project/solution_directory=".godot"
 
+[editor]
+
+naming/node_name_num_separator=3
+
+[physics]
+
+3d/default_gravity=0.0
+3d/default_gravity_vector=Vector3(0, 0, 0)
+2d/default_gravity=0.0
+2d/default_gravity_vector=Vector2(0, 0)
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
-renderer/rendering_method="mobile"
 textures/lossless_compression/force_png=true
 textures/default_filters/use_nearest_mipmap_filter=true
