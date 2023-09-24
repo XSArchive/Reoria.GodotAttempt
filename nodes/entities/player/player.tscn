@@ -1,6 +1,7 @@
-[gd_scene load_steps=32 format=3 uid="uid://dgxoy221a54ay"]
+[gd_scene load_steps=33 format=3 uid="uid://dgxoy221a54ay"]
 
 [ext_resource type="PackedScene" uid="uid://cb50otd1puhkf" path="res://nodes/entities/animated_entity.tscn" id="1_pdrci"]
+[ext_resource type="Script" path="res://source/Reoria.Game/Entities/Player/Player.cs" id="2_f4u0q"]
 [ext_resource type="Texture2D" uid="uid://o4v5jup7tgo1" path="res://assets/graphics/actors/$tf_template.png" id="2_luqyr"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vw6xf"]
@@ -288,6 +289,7 @@ animations = [{
 }]
 
 [node name="Player" instance=ExtResource("1_pdrci")]
+script = ExtResource("2_f4u0q")
 
 [node name="AnimatedSprite" parent="." index="2"]
 sprite_frames = SubResource("SpriteFrames_iunyv")

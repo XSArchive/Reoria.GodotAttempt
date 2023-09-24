@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://cb50otd1puhkf"]
+[gd_scene load_steps=4 format=3 uid="uid://cb50otd1puhkf"]
 
 [ext_resource type="PackedScene" uid="uid://bkixcdswq2osg" path="res://nodes/entities/static_entity.tscn" id="1_52s45"]
 [ext_resource type="SpriteFrames" uid="uid://b0jih3pvf1ej" path="res://nodes/entities/animated_entity_animations.tres" id="2_4c4sp"]
+[ext_resource type="Script" path="res://source/Reoria.Game/Entities/AnimatedEntity.cs" id="2_piyr2"]
 
 [node name="AnimatedEntity" instance=ExtResource("1_52s45")]
+script = ExtResource("2_piyr2")
 
 [node name="Sprite" parent="." index="1"]
 visible = false

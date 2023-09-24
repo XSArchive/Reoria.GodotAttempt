@@ -5,3 +5,5 @@
 [node name="DevelopmentEnvironment" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_3358f")]
+position = Vector2(128, 128)
+script = null
