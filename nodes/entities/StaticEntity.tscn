@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bkixcdswq2osg"]
+
+[ext_resource type="PackedScene" uid="uid://cif6rpe0g52gs" path="res://nodes/entities/Entity.tscn" id="1_210yu"]
+
+[node name="Entity" instance=ExtResource("1_210yu")]
+
+[node name="SpriteCollisionCalculator" type="Node2D" parent="Collision" index="0"]
+
+[node name="Sprite" type="Sprite2D" parent="." index="1"]
