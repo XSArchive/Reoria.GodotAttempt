@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Reoria"
-run/main_scene="res://scenes/development_environment.tscn"
+config/description="Reoria is an online adventure role playing game made with Godot."
 config/features=PackedStringArray("4.1", "Mobile")
 config/icon="res://icon.svg"
 
@@ -31,6 +31,15 @@ project/solution_directory=".godot"
 [editor]
 
 naming/node_name_num_separator=3
+
+[importer_defaults]
+
+3d_texture={
+"compress/mode": 0
+}
+2d_array_texture={
+"compress/mode": 0
+}
 
 [input]
 
