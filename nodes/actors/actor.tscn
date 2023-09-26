@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://cr53j5tuafg46"]
+
+[ext_resource type="Script" path="res://source/nodes/actors/actor.gd" id="1_4ko6n"]
+[ext_resource type="Texture2D" uid="uid://e21jjo6yr4nw" path="res://assets/graphics/icons/time_fantasy/icon071.png" id="1_5rggo"]
+[ext_resource type="Script" path="res://source/nodes/actors/actor_collision_shape.gd" id="3_147f0"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_c5x0i"]
+radius = 8.0
+
+[node name="Actor" type="CharacterBody2D"]
+script = ExtResource("1_4ko6n")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture = ExtResource("1_5rggo")
+
+[node name="CollisionShape" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_c5x0i")
+script = ExtResource("3_147f0")
+
+[connection signal="texture_changed" from="Sprite" to="CollisionShape" method="_on_sprite_texture_changed"]
