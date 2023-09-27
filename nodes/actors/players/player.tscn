@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cetohnbtthjn"]
+
+[ext_resource type="PackedScene" uid="uid://cr53j5tuafg46" path="res://nodes/actors/actor.tscn" id="1_86bqw"]
+[ext_resource type="Texture2D" uid="uid://o4v5jup7tgo1" path="res://assets/graphics/actors/$tf_template.png" id="2_dukmo"]
+
+[node name="Player" instance=ExtResource("1_86bqw")]
+
+[node name="Sprite" parent="." index="0"]
+texture = ExtResource("2_dukmo")
+hframes = 3
+vframes = 4
+frame = 1
+
+[node name="CollisionShape" parent="." index="1"]
+position = Vector2(0, 9)
+position_snap = Vector2(0, 0.5)
+size_multipliers = Vector2(1, 0.25)
