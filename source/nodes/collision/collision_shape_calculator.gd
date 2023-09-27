@@ -5,6 +5,9 @@
 @export var position_offset: Vector2 = Vector2.ZERO
 @export var size_multipliers: Vector2 = Vector2(1, 1)
 
+func _ready():
+	_on_sprite_draw()
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if(Engine.is_editor_hint()):
